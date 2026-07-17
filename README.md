@@ -85,21 +85,21 @@ C. 三项已经确定，只需要对齐负责人和完成标准
 发布到 npm 后，只需在项目目录输入一条命令：
 
 ```bash
-npx --yes @dong/compound-knowledge install --platform codex
+npx --yes @oydxxx/compound-knowledge install --platform codex
 ```
 
 想同时安装 Codex 与 Claude Code：
 
 ```bash
-npx --yes @dong/compound-knowledge install --platform all
+npx --yes @oydxxx/compound-knowledge install --platform all
 ```
 
 安装器会先检查**所有**目标，遇到任何不同内容就不写入，避免半套安装；更新、检查和卸载分别使用：
 
 ```bash
-npx --yes @dong/compound-knowledge status --platform codex
-npx --yes @dong/compound-knowledge update --platform codex
-npx --yes @dong/compound-knowledge uninstall --platform codex
+npx --yes @oydxxx/compound-knowledge status --platform codex
+npx --yes @oydxxx/compound-knowledge update --platform codex
+npx --yes @oydxxx/compound-knowledge uninstall --platform codex
 ```
 
 `uninstall` 会把已安装内容移出发现路径并保留带时间戳的可恢复副本；若你修改过本地内容，需明确加 `--force`。
@@ -163,4 +163,4 @@ $zs-boom 我想做一个个人账号，但不知道应该从哪个方向开始�
 
 ## 许可证
 
-[MIT License](plugins/compound-knowledge/LICENSE)
+[MIT License](LICENSE)

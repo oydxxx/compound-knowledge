@@ -1,14 +1,23 @@
 {
-  "name": "@dong/compound-knowledge",
+  "name": "@oydxxx/compound-knowledge",
   "version": "3.1.0",
   "description": "一键安装 Compound Knowledge 中文 AI 工作流到 Codex 或 Claude Code。",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oydxxx/compound-knowledge.git"
+  },
+  "homepage": "https://github.com/oydxxx/compound-knowledge#readme",
+  "bugs": {
+    "url": "https://github.com/oydxxx/compound-knowledge/issues"
+  },
   "type": "module",
   "bin": {
     "compound-knowledge": "bin/compound-knowledge.mjs"
   },
   "files": [
     "bin/",
+    "LICENSE",
     "plugins/compound-knowledge/skills/",
     "plugins/compound-knowledge/adapters/claude-code/commands/",
     "plugins/compound-knowledge/.claude-plugin/",
