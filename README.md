@@ -82,6 +82,18 @@ C. 三项已经确定，只需要对齐负责人和完成标准
 
 ## 开始使用
 
+### WorkBuddy / CodeBuddy
+
+在终端运行这一条命令，即可把全部六个技能安装到 CodeBuddy 兼容的全局技能目录；重开 WorkBuddy 后，输入 `$zs-boom` 即可开始：
+
+```bash
+npx -y skills add oydxxx/compound-knowledge -g -a codebuddy
+```
+
+该命令已经过真实安装验证，会将 `zs-boom`、`zs-plan`、`zs-confidence`、`zs-review`、`zs-work` 和 `zs-compound` 写入 `~/.codebuddy/skills/`。不要默认使用 `--all`，它会同时安装到电脑上所有被检测到的兼容 Agent。
+
+### Codex 与 Claude Code
+
 发布到 npm 后，只需在项目目录输入一条命令：
 
 ```bash

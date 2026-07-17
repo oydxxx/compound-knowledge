@@ -1,5 +1,17 @@
 # WorkBuddy 适配
 
+## 一键安装（推荐）
+
+WorkBuddy 可通过 `skills` CLI 的 CodeBuddy 兼容目标安装标准技能。在终端运行：
+
+```bash
+npx -y skills add oydxxx/compound-knowledge -g -a codebuddy
+```
+
+该命令会发现仓库中的六个 `zs-*` 标准技能，并将它们安装到 `~/.codebuddy/skills/`。安装后重开 WorkBuddy，确认六个英文规范名各出现一次，再用中文请求调用 `zs-boom` 并保存截图或文本证据。
+
+不要使用 `--all`，除非你明确希望同时安装到本机所有被检测到的兼容 Agent。若当前 WorkBuddy 版本没有扫描 CodeBuddy 兼容目录，再使用下方的本地归档导入回退路径。
+
 ## 确定性归档与导入
 
 WorkBuddy 按单技能归档逐个导入。归档的唯一来源是标准 `skills/zs-*` 目录：每个包只含该目录的引用闭包和根 `LICENSE`，不复制其他平台的正文。打包前按稳定的文件顺序、UTC 时间戳和无额外属性的归档选项生成 `compound-knowledge-zs-*.zip`；将根 `LICENSE` 放在每个归档顶层。
