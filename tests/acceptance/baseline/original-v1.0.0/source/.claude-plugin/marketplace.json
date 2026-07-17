@@ -1,0 +1,26 @@
+{
+  "name": "compound-knowledge-plugin",
+  "owner": {
+    "name": "Every",
+    "url": "https://every.to"
+  },
+  "metadata": {
+    "description": "Workflows for knowledge work that compounds over time",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "compound-knowledge",
+      "description": "Knowledge compounds. Brainstorm, plan, review, execute, and save what you learn — so the next cycle starts smarter.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Austin Tedesco",
+        "url": "https://every.to",
+        "email": "austin@every.to"
+      },
+      "homepage": "https://every.to/p/how-to-build-a-command-center-that-keeps-you-sane",
+      "tags": ["knowledge-work", "planning", "review", "compounding", "brainstorm"],
+      "source": "./plugins/compound-knowledge"
+    }
+  ]
+}

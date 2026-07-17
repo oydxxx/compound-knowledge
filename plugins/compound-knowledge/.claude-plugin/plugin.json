@@ -1,0 +1,23 @@
+{
+  "name": "compound-knowledge",
+  "version": "3.1.0",
+  "description": "让知识持续积累：梳理、计划、校准、审查、执行并沉淀经验。包含 6 个技能和 5 个角色合同。",
+  "author": {
+    "name": "Austin Tedesco",
+    "email": "austin@every.to",
+    "url": "https://every.to"
+  },
+  "homepage": "https://every.to/p/how-to-build-a-command-center-that-keeps-you-sane",
+  "repository": "https://github.com/EveryInc/compound-knowledge-plugin",
+  "license": "MIT",
+  "keywords": [
+    "knowledge-work",
+    "planning",
+    "review",
+    "compounding",
+    "brainstorm",
+    "strategy",
+    "campaign",
+    "brief"
+  ]
+}

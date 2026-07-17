@@ -1,0 +1,26 @@
+{
+  "name": "compound-knowledge-plugin",
+  "owner": {
+    "name": "Every",
+    "url": "https://every.to"
+  },
+  "metadata": {
+    "description": "让知识工作持续积累的中文工作流",
+    "version": "3.1.0"
+  },
+  "plugins": [
+    {
+      "name": "compound-knowledge",
+      "description": "让知识持续积累：梳理、计划、审查、执行并沉淀经验，让下一轮从更好的起点开始。",
+      "version": "3.1.0",
+      "author": {
+        "name": "Austin Tedesco",
+        "url": "https://every.to",
+        "email": "austin@every.to"
+      },
+      "homepage": "https://every.to/p/how-to-build-a-command-center-that-keeps-you-sane",
+      "tags": ["knowledge-work", "planning", "review", "compounding", "brainstorm"],
+      "source": "./plugins/compound-knowledge"
+    }
+  ]
+}

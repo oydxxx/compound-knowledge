@@ -1,0 +1,6 @@
+interface:
+  display_name: "把握度检查"
+  short_description: "辨明证据、未知项与推进建议。"
+  default_prompt: "Use $zs-confidence 用中文检查这项工作的已知、未知和下一步。"
+policy:
+  allow_implicit_invocation: true

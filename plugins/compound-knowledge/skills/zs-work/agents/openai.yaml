@@ -1,0 +1,6 @@
+interface:
+  display_name: "执行"
+  short_description: "拆解知识工作计划并交付计划内产物。"
+  default_prompt: "Use $zs-work 用中文执行指定计划并记录结果。"
+policy:
+  allow_implicit_invocation: true

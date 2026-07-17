@@ -1,0 +1,34 @@
+{
+  "name": "@dong/compound-knowledge",
+  "version": "3.1.0",
+  "description": "一键安装 Compound Knowledge 中文 AI 工作流到 Codex 或 Claude Code。",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "compound-knowledge": "bin/compound-knowledge.mjs"
+  },
+  "files": [
+    "bin/",
+    "plugins/compound-knowledge/skills/",
+    "plugins/compound-knowledge/adapters/claude-code/commands/",
+    "plugins/compound-knowledge/.claude-plugin/",
+    "plugins/compound-knowledge/commands/",
+    "plugins/compound-knowledge/agents/",
+    "plugins/compound-knowledge/docs/",
+    "plugins/compound-knowledge/LICENSE",
+    "plugins/compound-knowledge/AGENTS.md",
+    "plugins/compound-knowledge/CLAUDE.md",
+    "plugins/compound-knowledge/README.md",
+    "plugins/compound-knowledge/PRIVACY.md",
+    "plugins/compound-knowledge/SECURITY.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test:installer": "node --test tests/installer.test.mjs"
+  }
+}

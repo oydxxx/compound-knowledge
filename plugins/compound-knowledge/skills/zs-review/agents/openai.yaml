@@ -1,0 +1,6 @@
+interface:
+  display_name: "审查"
+  short_description: "审查材料的战略一致性和数据准确性。"
+  default_prompt: "Use $zs-review 用中文审查这个文件或这段内容。"
+policy:
+  allow_implicit_invocation: true

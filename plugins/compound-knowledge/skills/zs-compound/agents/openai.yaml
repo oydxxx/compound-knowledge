@@ -1,0 +1,6 @@
+interface:
+  display_name: "沉淀学习"
+  short_description: "提取经批准的可复用学习并保存知识。"
+  default_prompt: "Use $zs-compound 用中文从这次工作中提取可复用学习。"
+policy:
+  allow_implicit_invocation: true
