@@ -104,7 +104,7 @@ npx --yes @oydxxx/compound-knowledge uninstall --platform codex
 
 `uninstall` 会把已安装内容移出发现路径并保留带时间戳的可恢复副本；若你修改过本地内容，需明确加 `--force`。
 
-> 该 npm 包尚未发布。发布前可在本仓库运行 `npm pack --dry-run` 检查将被分发的文件；发布后上述命令即可使用。
+> 安装包已发布到 npm。维护者可在本仓库运行 `npm pack --dry-run` 检查下一次发布将包含的文件。
 
 ### Codex
 
