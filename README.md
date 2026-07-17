@@ -90,7 +90,7 @@ C. 三项已经确定，只需要对齐负责人和完成标准
 npx -y skills add oydxxx/compound-knowledge -g -a codebuddy
 ```
 
-该命令已经过真实安装验证，会将 `zs-boom`、`zs-plan`、`zs-confidence`、`zs-review`、`zs-work` 和 `zs-compound` 写入 `~/.codebuddy/skills/`。不要默认使用 `--all`，它会同时安装到电脑上所有被检测到的兼容 Agent。
+该命令已经过真实安装与 WorkBuddy 加载验证：会将 `zs-boom`、`zs-plan`、`zs-confidence`、`zs-review`、`zs-work` 和 `zs-compound` 写入 `~/.codebuddy/skills/`，重开 WorkBuddy 后可发现 `zs-boom`。不要默认使用 `--all`，它会同时安装到电脑上所有被检测到的兼容 Agent。
 
 ### Codex 与 Claude Code
 

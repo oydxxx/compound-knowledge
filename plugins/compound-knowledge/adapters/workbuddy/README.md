@@ -8,7 +8,7 @@ WorkBuddy 可通过 `skills` CLI 的 CodeBuddy 兼容目标安装标准技能。
 npx -y skills add oydxxx/compound-knowledge -g -a codebuddy
 ```
 
-该命令会发现仓库中的六个 `zs-*` 标准技能，并将它们安装到 `~/.codebuddy/skills/`。安装后重开 WorkBuddy，确认六个英文规范名各出现一次，再用中文请求调用 `zs-boom` 并保存截图或文本证据。
+该命令会发现仓库中的六个 `zs-*` 标准技能，并将它们安装到 `~/.codebuddy/skills/`。已在 macOS 实际运行中验证安装六项技能并在重开 WorkBuddy 后完成加载确认；见[运行证据](../../../../tests/acceptance/runs/quick/workbuddy/codebuddy-install-and-load-2026-07-17.md)。仍应在你的版本中确认六个英文规范名各出现一次，再用中文请求调用 `zs-boom`。
 
 不要使用 `--all`，除非你明确希望同时安装到本机所有被检测到的兼容 Agent。若当前 WorkBuddy 版本没有扫描 CodeBuddy 兼容目录，再使用下方的本地归档导入回退路径。
 
