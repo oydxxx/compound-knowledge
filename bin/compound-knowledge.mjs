@@ -200,7 +200,8 @@ async function uninstall(inspections, force) {
 }
 
 function validateOptions(options) {
-  if (!commands.has(options.command) || options.command === "help") return null;
+  if (!commands.has(options.command)) return `不认识的命令：${options.command}。请使用 install、update、status、uninstall 或 help。`;
+  if (options.command === "help") return null;
   if (!options.platform || !platforms.has(options.platform)) return "请通过 --platform 指定 codex、claude 或 all。";
   if (options.scope && !["project", "global", "user"].includes(options.scope)) return "--scope 只支持 project、global 或 user。";
   if (options.platform === "all" && options.scope) return "同时安装多个平台时不要传 --scope；它们使用各自默认位置。";

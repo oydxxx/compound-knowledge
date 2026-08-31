@@ -11,7 +11,7 @@ import unittest
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
 PLUGIN_ROOT = REPOSITORY_ROOT / "plugins/compound-knowledge"
-VERSION = "3.1.0"
+VERSION = "3.1.4"
 LICENSE_DIGEST = "5e6b8e5eb65e330d1222707bec87584d57ec48f61daa92a590d98f88ac3c04e3"
 
 

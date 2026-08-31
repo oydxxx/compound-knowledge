@@ -1,6 +1,8 @@
 # Compound Knowledge 插件说明
 
-这是 Compound Knowledge 的可分发插件包（版本 `3.1.0`）。六个 `skills/zs-*/SKILL.md` 是唯一权威工作流正文；平台目录只处理发现、安装和兼容入口，不能复制或改写核心流程。
+这是 Compound Knowledge 的可分发插件包（版本 `3.1.4`）。六个 `skills/zs-*/SKILL.md` 是唯一权威工作流正文；平台目录只处理发现、安装和兼容入口，不能复制或改写核心流程。
+
+> 发布状态：Codex 是当前正式支持的平台。Claude Code、WorkBuddy 和 TRAE SOLO 的适配文件会随包提供，但在完成各自的真实安装、发现、调用、回读、更新和卸载验收前，只属于实验性兼容入口。
 
 ## 工作流与调用
 

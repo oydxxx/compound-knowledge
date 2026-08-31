@@ -2,6 +2,8 @@
 
 > 一个把“我不知道该从哪里开始”变成“我知道下一步先确认什么”的中文 AI 工作流。
 
+> 发布状态：当前正式支持 Codex 项目级安装路径。Claude Code、WorkBuddy 和 TRAE SOLO 的入口属于实验性兼容，除非你已在对应宿主中自行完成安装、发现、调用、回读、更新和卸载验证。
+
 `想清楚再做` 适合处理那些重要、模糊、不能靠多列几个待办就解决的事情：一次会议后的下一步、一个想开始却迟迟没开始的项目、一堆想法和资料，或一个总觉得在忙却没有进展的问题。
 
 它先帮你梳理问题，再帮你计划、执行，并把经验保留下来。
@@ -82,7 +84,7 @@ C. 三项已经确定，只需要对齐负责人和完成标准
 
 ## 开始使用
 
-### WorkBuddy / CodeBuddy
+### WorkBuddy / CodeBuddy（实验性）
 
 在终端运行这一条命令，即可把全部六个技能安装到 CodeBuddy 兼容的全局技能目录；重开 WorkBuddy 后，输入 `$zs-boom` 即可开始：
 
@@ -90,9 +92,9 @@ C. 三项已经确定，只需要对齐负责人和完成标准
 npx -y skills add oydxxx/compound-knowledge -g -a codebuddy
 ```
 
-该命令已经过真实安装与 WorkBuddy 加载验证：会将 `zs-boom`、`zs-plan`、`zs-confidence`、`zs-review`、`zs-work` 和 `zs-compound` 写入 `~/.codebuddy/skills/`，重开 WorkBuddy 后可发现 `zs-boom`。不要默认使用 `--all`，它会同时安装到电脑上所有被检测到的兼容 Agent。
+该命令只验证了部分安装与加载路径，不代表完整工作流已通过验收。不要默认使用 `--all`，它会同时安装到电脑上所有被检测到的兼容 Agent。
 
-### Codex 与 Claude Code
+### Codex（正式支持）与 Claude Code（实验性）
 
 发布到 npm 后，只需在项目目录输入一条命令：
 
@@ -100,7 +102,7 @@ npx -y skills add oydxxx/compound-knowledge -g -a codebuddy
 npx --yes @oydxxx/compound-knowledge install --platform codex
 ```
 
-想同时安装 Codex 与 Claude Code：
+如需同时尝试 Codex 与 Claude Code：
 
 ```bash
 npx --yes @oydxxx/compound-knowledge install --platform all

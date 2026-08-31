@@ -87,6 +87,18 @@ test("rejects a shared scope that would silently target the wrong platform", asy
   assert.match(result.stderr, /不要传 --scope/);
 });
 
+test("rejects unknown commands without writing to the project", async () => {
+  const sandbox = await mkdtemp(path.join(tmpdir(), "compound-knowledge-installer-"));
+  const project = path.join(sandbox, "project");
+  const home = path.join(sandbox, "home");
+  await mkdir(project, { recursive: true });
+
+  const result = run(["nonsense", "--platform", "codex"], project, home);
+  assert.notEqual(result.status, 0);
+  assert.match(result.stderr, /不认识的命令/);
+  assert.equal(pathExists(path.join(project, ".agents")), false);
+});
+
 function pathExists(target) {
   return existsSync(target);
 }
